@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ポートフォリオ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- ここからＣＳＳ -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/88c86ccbe6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ここからヘッダー -->
+    <header>
+      <div class="container">
+        <div class="h-left" id="top-btn">
+          <h1>Portfolio</h1>
+        </div><!--h-left-->
+
+        <div class="h-right">
+          <i class="fas fa-bars i-menu" id="i-ber"></i>
+          <ul class="r-list">
+            <li>
+              <a href="#profile">PROFILE</a>
+            </li>
+            <li>
+              <a href="#skill">SKILL</a>
+            </li>
+            <li>
+              <a href="#qa">Q&A</a>
+            </li>
+            <li>
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div><!--h-right-->
+      </div><!--container-->
+      <!--ハンバーガーメニュー押したとき-->
+      <div class="h-menu" id="i-slide" >
+        <div class="close" id="close">×</div>
+        <div class="menu-text-box">
+          <div class="menu-text">
+            <a href="#profile">PROFILE</a>
+          </div>
+          <div class="menu-text">
+            <a href="#skill">SKILL</a>
+          </div>
+          <div class="menu-text">
+            <a href="#qa">Q&A</a>
+          </div>
+          <div class="menu-text">
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- トップエリア -->
+    <div class="top-wrapper" id="top-message">
+      <div class="container">
+        <div class="top-contents" id="top-text">
+          <h2>Wellcome to my Portfolio!!</h2>
+          <p>This page is my portfolio ver1.0.</p>
+        </div>
+      </div><!--container-->
+    </div>
+    <!-- ここからプロフィールエリア -->
+    <div class="profile-wrapper" id="profile">
+      <div class="container">
+        <div class="section-title">
+          <h3>PROFILE</h3>
+        </div>
+        <div class="profile-contents fade-in">
+          <div class="p-box profile-left">
+            <img src="profile.jpg" alt="プロフィール画像">
+            <h4>Mi-tomo</h4>
+          </div><!-- profile-left -->
+
+          <div class="p-box profile-right">
+            <p>1999年生まれ。<br>web系エンジニア志望の文系学生です。現在は同志社大学に在学中。</p>
+            <p>2020年3月からサーバーサイドの勉強もはじめました。</p>
+            <p>テクノロジーとSFと映画が大好きです。<br>大学生の間に1人でサービスを作れるようになるのが目標。</p>
+            <p>好きな言葉は「Done is better than perfect.」</p>
+
+            <div class="profile-snsbox gitbox">
+              <p class="sns-text">GitHub→</p>
+              <a href="https://github.com/michy-daist" class="sns-icon git-a"><span class="fab fa-github github"></span></a>
+            </div>
+          </div><!-- profile-right -->
+          <div class="clear"></div>
+        </div>
+      </div><!--container-->
+    </div>
+    <!-- ここからスキルエリア -->
+    <div class="skill-wrapper" id="skill">
+      <div class="container">
+        <div class="section-title">
+          <h3>SKILL</h3>
+        </div>
+        <div class="skill-contents">
+          <div class="ipad-box1">
+            <div class="skill-box fade-in">
+              <div class="skill-icon">
+                <span class="fab fa-html5 html"></span>
+                <p>HTML</p>
+              </div>
+              <div class="level">
+                <p>習熟度→★★★★☆</p><br>
+                <p  class="skill-text">どんなレイアウトでも迷いなくコーディングできるレベル。大半のタグは自由に使いこなせるようになり、保守性の高いコードを書くことに意識を向けられるようになった。</p>
+              </div>
+            </div>
+            <div class="skill-box fade-in">
+              <div class="skill-icon">
+                <span class="fab fa-css3-alt css"></span>
+                <p>CSS</p>
+              </div>
+              <div class="level">
+                <p>習熟度→★★★☆☆</p><br>
+                <p class="skill-text">LPなどのサイトであれば、ほとんど調べずに模写できるレベル。よく使用されるセレクタやプロパティなどについては理解できているが、深い知識はまだ持っていない。</p>
+              </div>
+            </div>
+            <div class="skill-box fade-in">
+              <div class="skill-icon">
+                <span class="fas fa-code js"></span>
+                <p>JavaScript & jQuery</p>
+              </div>
+              <div class="level">
+                <p>習熟度→★★★☆☆</p><br>
+                <p class="skill-text">JavaScriptの基礎文法を用いたjQueryの実装ができるレベル。書いていて一番楽しいと感じる言語。将来的にはNode.jsを学び、サーバーサイドでも使ってみたいと思っている。</p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="ipad-box2">
+            <div class="skill-box ipad-btm fade-in">
+              <div class="skill-icon">
+                <span class="fas fa-code php"></span>
+                <p>PHP</p>
+              </div>
+              <div class="level">
+                <p>習熟度→★★★☆☆</p><br>
+                <p class="skill-text">ページ間のデータ移動や問い合わせフォームの設置、自動メール返信機能を実装できるレベル。選択された対象や個数に応じて金額を計算する簡単なアプリなどであれば作成できる。</p>
+              </div>
+            </div>
+            <div class="skill-box ipad-btm fade-in">
+              <div class="skill-icon">
+                <span class="fas fa-database mysql"></span>
+                <p>MySQL</p>
+              </div>
+              <div class="level">
+                <p>習熟度→★★☆☆☆</p><br>
+                <p class="skill-text">データの追加や削除といった超基礎的なSQL文が書けるレベル。PHPと組み合わせて出席管理のデータベースを作成した経験あり。セキュリティーの知識が浅く、できることは少ない。</p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div><!--container-->
+    </div>
+    <!-- ここからＱ&Ａエリア -->
+    <div class="qa-wrapper" id="qa">
+      <div class="container">
+        <div class="section-title">
+          <h3>Q&A</h3>
+        </div>
+        <div class="qa-contents fade-in">
+          <ul class="qa-text">
+            <li class="qa-list-item">
+              <h3 class="question">プログラミングをはじめたきっかけは？</h3>
+              <span>＋</span>
+              <div class="answer">
+                <p>映画『ソーシャル・ネットワーク』を観て、パソコン一台で世界を変えるプログラマーに憧れたから。</p>
+              </div>
+            </li>
+            <li class="qa-list-item">
+              <h3 class="question">フロントエンドかバックエンドか、<br class="ipad-br">どちらのエンジニアになりたい？</h3>
+              <span>＋</span>
+              <div class="answer">
+                <p>まだはっきりと決まってません。もう少しサーバーサイドを勉強してからどちらが自分に合っているか考える予定。</p>
+              </div>
+            </li>
+            <li class="qa-list-item">
+              <h3 class="question">好きな映画教えて。</h3>
+              <span>＋</span>
+              <div class="answer">
+                <p>一番好きな映画は『ファイト・クラブ』。デヴィッド・フィンチャー監督のファンです。</p>
+              </div>
+            </li>
+            <li class="qa-list-item">
+              <h3 class="question">このポートフォリオは何で作ってる？</h3>
+              <span>＋</span>
+              <div class="answer">
+                <p>このページはHTML,CSS,jQueryで作成されています。次はもっとjQuery使っていっぱい動かしたい！</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div><!--container-->
+    </div><!--qa-wrapper-->
+    <div class="contact-wrapper" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h3>CONTACT</h3>
+        </div>
+        <div class="contact-contents fade-in">
+          <p>オススメの映画を教えてくださる方、プログラミングについて教えてくださる方、<br>ちょっとお話してみたいという方はtwitterかメールでご連絡ください。<br>映画の無料券くれる方連絡求む！</p>
+          <div class="profile-snsbox twiBox">
+            <a href="https://twitter.com/michidastard" class="sns-icon twi-a"><span class="fab fa-twitter twitter"></span></a>
+          </div>
+          <p>nerunerutomo@gmail.com</p>
+        </div>
+      </div><!--container-->
+    </div>
+    <!-- ここからフッター -->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p>&copy; 2020 Portfolio</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+
+</html>

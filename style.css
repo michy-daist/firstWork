@@ -1,0 +1,411 @@
+*{
+  box-sizing: border-box;
+}
+body{
+ margin: 0;
+ font-size: 20px;
+}
+h1,h2,h3,h4,p{
+  margin:0;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  width:100%;
+}
+ul{
+  list-style:none;
+  margin: 0;
+}
+.section-title{
+  text-align: center;
+  padding:10px 0px 40px 0px;
+  font-family: "Open sans",sans-serif;/*'Marcellus SC', serif;*/
+  font-size: 40px;
+}
+
+/*ここからヘッダーーーーーーーーーーーーーーー*/
+header{
+  height:50px;
+  background-color: #333;
+  opacity: 1.0;
+  font-family: "Open sans",sans-serif;/*'Marcellus SC', serif;*/
+  color: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  z-index:10;
+}
+.i-menu{
+  display: none;
+}
+.h-menu{
+  display:none;
+  position: fixed;
+  top:0;
+  right:0;
+  width: 100%;
+  height:100%;
+  z-index:100;
+  background-color:#000;
+  opacity:0.9;
+  text-align: center;
+}
+.close{
+  font-size:40px;
+  color:#fff;
+  float:right;
+  padding:0 30px;
+}
+.h-left{
+  float: left;
+}
+.menu-text{
+  padding:15px 0;
+}
+.menu-text-box{
+  padding-top:50px;
+}
+.menu-text a{
+  text-decoration: none;
+  color:#fff;
+  cursor:pointer;
+}
+.h-left h1{
+  margin:0;
+  font-size: 30px;
+  color:#fff;
+  cursor:pointer;
+
+}
+.h-right{
+  float: right;
+}
+.r-list a{
+  padding:10px;
+  text-decoration:none;
+  color: #fff;
+  font-weight:600;
+  line-height:50px;
+}
+.r-list a:hover{
+  color:#5983ff;
+}
+.r-list li{
+  float: left;
+}
+/*ここまでヘッダーーーーーーーーーーーーーーー*/
+
+/*ここからトップエリア*/
+.top-wrapper{
+  background-image:url("topBack.jpg");
+  height:880px;
+  background-color:rgba(255, 255, 255, 0.15);
+  background-size:cover;
+  background-blend-mode:lighten;
+  display:none;
+}
+.top-contents{
+  /*padding:100px 0px;*/
+  font-family: "Open sans",sans-serif;
+  padding-top: 360px;
+  text-align: center;
+  color:#fff;
+}
+.top-contents h2{
+  font-size:80px;
+  margin:0;
+}
+/*ここまでトップエリア*/
+
+/*ここからプロフィールエリア*/
+.profile-wrapper{
+  background-color:rgba(238,238,238,1.0);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/*.profile-snsbox{
+  font-size:40px;
+}*/
+.sns-icon{
+  display:inline-block;
+  vertical-align: top;
+}
+.twi-a{
+  color:#fff;
+}
+.sns-text{
+  font-size:15px;
+  display:inline;
+  line-height:60px;
+}
+.gitbox{
+  padding:30px 0px;
+}
+.profile-snsbox span{
+  text-align:center;
+  width:52px;
+  height:52px;
+  /*padding:8px;*/
+  border-radius:50%;
+  opacity: 0.8;
+}
+.profile-snsbox span:hover{
+  opacity:1.0;
+}
+.twitter{
+  background-color:#1DA1F2;
+  font-size:30px;
+  line-height:52px;
+  margin-right:10px;
+}
+
+.github{
+  /*background-color:#fff;*/
+  font-size:53px;
+  line-height:52px;
+  color:#000;
+}
+
+.git-a{
+  display:inline-block;
+}
+.profile-contents{
+  padding:10px;
+  margin:0 auto;
+  text-align: center;
+  /*width:610px;*/
+}
+.profile-contents img{
+  width:200px;
+  border-radius: 50%;
+  border:4px solid #fff;
+}
+.p-box{
+  width:50%;
+  float:left;
+}
+.clear{
+  clear: left;
+}
+/*ここまでプロフィールエリア*/
+
+/*ここからスキルエリア*/
+.skill-contents{
+  padding-bottom:60px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.skill-box{
+  float:left;
+  /*width:20%;*/
+}
+.skill-box{
+  width:33%;
+  padding:10px;
+  text-align: center;
+}
+.skill-text{
+  padding:0 50px;
+}
+.ipad-box1{
+  width:100%;
+  margin-bottom:60px;
+}
+.ipad-box2{
+  margin:0 auto;
+  width:66.6%;
+}
+.ipad-btm{
+  width:50%;
+}
+
+.skill-icon span{
+  font-size:80px;
+}
+.html{
+  color:#FF4500;
+}
+.css{
+  color:#87CEFA;
+}
+.js{
+  color:#30F9B2;
+}
+.php{
+  color:#ff8c00;
+}
+.mysql{
+  color:#5D99FF;
+}
+.level p{
+  padding-top: 10px;
+  font-size:15px;
+}
+
+/*ここまでスキルエリア*/
+
+/*ここからQAエリア*/
+.qa-wrapper{
+  background-color:#e6ecf0;
+  text-align:center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.qa-contents{
+  margin:0 auto;
+  width:880px;
+  padding-bottom: 60px;
+}
+.qa-list-item{
+  position:relative;
+  border-bottom:1px solid #c6c6c6;
+  cursor: pointer;
+}
+.ipad-br{
+  display:none;
+}
+.qa-list-item h3{
+  font-weight:normal;
+  padding:10px 0px;
+  font-size: 20px;
+}
+.qa-list-item p{
+  padding:15px 0px;
+  font-size: 15px;
+}
+.qa-list-item span{
+  position:absolute;
+  top:5px;
+  right:5px;
+}
+.answer{
+  display:none;
+}
+/*.open{
+  display: block;
+}*/
+/*ここまでQAエリア*/
+
+/*ここからコンタクトエリア*/
+.contact-contents{
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  font-size:15px;
+  padding-bottom:30px;
+}
+.twiBox{
+  padding:10px 0px;
+}
+/*ここまでコンタクトエリア*/
+
+/*ここからフッター*/
+footer{
+    font-family: 'Noto Sans JP', sans-serif;
+  height:100px;
+  background-color:#101e33;
+  text-align: center;
+  font-size:20px;
+}
+footer p{
+  line-height:100px;
+  color:#fff;
+}
+
+/*ここからｊQuery部分*/
+.fade-in{
+  opacity:0;
+  transform:translateY(20px);
+  transition:all 1s;
+
+}
+/*ここまでｊQuery部分*/
+
+
+/*ここまでフッター*/
+
+/*ここからレスポンシブ*/
+@media(max-width:1000px){
+
+  .h-left h1{
+    font-size:40px;
+  }
+
+  .top-wrapper{
+    height:560px;
+  }
+  .top-contents{
+    padding-top:200px;
+  }
+  .profile-right p{
+    font-size:15px;
+  }
+  .sns-text{
+    font-size:10px;
+  }
+  .skill-text{
+    padding:0;
+  }
+  .qa-contents{
+    width:600px;;
+  }
+  .ipad-br{
+    display:block;
+  }
+
+
+
+}
+@media(max-width:670px){
+  .h-left h1{
+    font-size:30px;
+    padding-top:5px;
+  }
+  .r-list{
+    display:none;
+  }
+  .i-menu{
+    display:inline-block;
+    font-size:30px;
+    line-height: 50px;
+    /*padding:0px 5px;*/
+    width:40px;
+    text-align: center;
+  }
+  .top-contents{
+    padding-top:160px;
+  }
+  .top-contents h2{
+    font-size:60px;
+  }
+  .p-box{
+    width:100%;
+  }
+  .profile-right{
+    padding-top:20px;
+  }
+  .skill-box{
+    width:100%;
+    padding-bottom: 40px;
+  }
+  .ipad-box1{
+    margin-bottom:0px;
+  }
+  .ipad-box2{
+    width:100%;
+    margin:0;
+  }
+  .qa-contents{
+    width:auto;
+  }
+  .qa-contents ul{
+    padding-inline-start:0px;
+  }
+  .qa-list-item h3{
+    font-size:15px;
+  }
+.qa-list-item span{
+  font-size:15px;
+}
+}
+
+/*ここまでレスポンシブ*/
