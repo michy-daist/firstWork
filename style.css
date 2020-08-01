@@ -244,10 +244,37 @@ header{
 }
 
 /*ここまでスキルエリア*/
-
+/*ここからworksエリア*/
+figure{
+    display: table;
+    width:320px;
+    margin: 20px auto;
+}
+.figure-area{
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fig-title{
+    font-size: 15px;
+    font-weight: bold;
+}
+.fig-content-box{
+    background-color: #fff;
+    padding:20px 0;
+}
+.works-wrapper{
+    background-color:#e6ecf0;
+    padding-bottom: 60px;
+}
+.works-image{
+    width:300px;
+    height:250px;
+}
+/*ここまでworksエリア*/
 /*ここからQAエリア*/
 .qa-wrapper{
-  background-color:#e6ecf0;
   text-align:center;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -287,6 +314,9 @@ header{
 /*ここまでQAエリア*/
 
 /*ここからコンタクトエリア*/
+.contact-wrapper{
+    background-color:#e6ecf0;
+}
 .contact-contents{
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
